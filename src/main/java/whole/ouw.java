@@ -26,6 +26,7 @@ public class ouw {
                 }
                 list.add(s.charAt(counter));
                 max=Math.max(max,count);
+                System.out.println(" deneme yazisi bakalim eklenecek mi");
             }
         }
         return max;
