@@ -94,6 +94,17 @@ public class main {
                     dirdir++;
                 }
             }
+            for(int q = 0; q<3;q=q+2){
+                if(q==0){
+                    if(lines.get(q).equals(lines.get(q+4))&&lines.get(q).equals(lines.get(q+8))){
+                        dirdir++;
+                    }
+                }else{
+                    if(lines.get(q).equals(lines.get(q+2))&&lines.get(q).equals(lines.get(q+4))){
+                        dirdir++;
+                    }
+                }
+            }
             if(dirdir>0){
                 break;
             }
@@ -113,6 +124,17 @@ public class main {
             for(int k = 0; k<7; k=k+3){
                 if(lines.get(k).equals(lines.get(k+1)) && lines.get(k+2).equals(lines.get(k))){
                     birbir++;
+                }
+            }
+            for(int q = 0; q<3;q=q+2){
+                if(q==0){
+                    if(lines.get(q).equals(lines.get(q+4))&&lines.get(q).equals(lines.get(q+8))){
+                        birbir++;
+                    }
+                }else{
+                    if(lines.get(q).equals(lines.get(q+2))&&lines.get(q).equals(lines.get(q+4))){
+                        birbir++;
+                    }
                 }
             }
             if(birbir>0){
@@ -169,13 +191,13 @@ public class main {
         System.out.println();
 
         if(birbir>0){
-            System.out.println("Computer won");
+            System.out.println("Computer won!");
         }
         else if(dirdir>0){
-            System.out.println("You won");
+            System.out.println("You won!");
         }
         else if(counter==0){
-            System.out.println("Draw");
+            System.out.println("Draw..");
         }
     }
 }
