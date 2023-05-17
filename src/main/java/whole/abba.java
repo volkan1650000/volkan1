@@ -52,6 +52,7 @@ public class abba {
                     break;
                 }
             }
+            System.out.println();
         }
         return sum;
     }
