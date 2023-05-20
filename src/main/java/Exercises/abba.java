@@ -1,7 +1,4 @@
-package whole;
-
-import java.util.ArrayList;
-import java.util.List;
+package Exercises;
 
 public class abba {
     public static void main(String[] args) {
